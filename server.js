@@ -1,7 +1,9 @@
 const express = require("express")
 
 const app = express()
+var cors = require('cors')
 
+app.use(cors())
 const fs = require("fs")
 
 app.get("/", (req, res) => {
